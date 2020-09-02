@@ -1,0 +1,21 @@
+# Site details
+title: Crepe Boheme
+description: Fresh, delicious, and bohemian crepes.
+url: ""
+baseurl: ""
+google_analytics_key: ""
+
+# Values for earch engine optimization
+author:
+  name: Sabine Grand
+  email: info@crepeboheme.com
+social:
+  name: Crepe Boheme
+  links:
+    - https://www.facebook.com/Crepe-Boheme-333246536829777
+
+# Jekyll settings
+permalink: pretty
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag

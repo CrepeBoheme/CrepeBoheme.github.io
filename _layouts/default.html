@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% seo %}
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png" sizes="32x32">
+
+    {% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
+    <script>
+        window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+        ga('create', '{{ site.google_analytics_key }}', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    {% endif %}
+</head>
+
+<body>
+    <div class="content">
+        {{ content }}
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="about">
+                <p>{{ site.data.context.footer.about }}</p>
+            </div>
+
+            <div class="contact">
+                <address>
+                    <a href="https://www.google.com/maps/place/{{ site.data.context.footer.contact.address | url_encode }}">
+                        {% include icons.html icon="place" %} {{ site.data.context.footer.contact.address }}
+                    </a>
+                </address>
+                <p class="email">
+                    <a href="mailto:{{ site.data.context.footer.contact.email }}?subject=Crepes">
+                        {% include icons.html icon="email" %} {{ site.data.context.footer.contact.email }}
+                    </a>
+                </p>
+                <p class="phone">
+                    <a href="tel:{{ site.data.context.footer.contact.phone | replace: ' ', '-' }}">
+                        {% include icons.html icon="phone" %} {{ site.data.context.footer.contact.phone }}
+                    </a>
+                </p>
+            </div>
+
+            <div class="sharing">
+                <a class="facebook" href="{{ site.data.context.footer.social.facebook }}">
+                    {% include icons.html icon="facebook" %}
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

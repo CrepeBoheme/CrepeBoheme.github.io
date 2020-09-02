@@ -1,0 +1,37 @@
+header:
+  title: Crepe Boheme
+  text: We are known for our fresh ingredients, delicious flavors, and bohemian lifestyle.
+  image: /images/crepes.png
+
+subheader:
+  title: Fresh, delicious, and bohemian crepes.
+  values:
+    - icon: population
+      headline: Fresh
+      text: We pick our ingredients fresh and local, right from Dayton's farmers market.
+    - icon: economy
+      headline: Delicious
+      text: We add lots of goodies, just a little of powdered sugar, and a ton of love.
+    - icon: conditions
+      headline: Bohemian
+      text: Our French chef is simply an artist, serving you a taste of unconventional lifestyle.
+
+about:
+  title: About us
+  text: We are known for our fresh ingredients, delicious flavors, and bohemian lifestyle.
+  image: /images/hands.jpg
+
+quote:
+  text: A more unique place to eat in this market is the crepe shop. They are made to order, and their selection of different types is fantastic.
+  reviewer:
+    name: Michael S.
+    image: /images/reviewer.png
+
+footer:
+  about: Fresh, delicious, and bohemian crepes.
+  contact: 
+    address: 600 E 2nd St, Dayton, OH 45402
+    phone: +1 937 307 7457
+    email: info@crepeboheme.com
+  social:
+    facebook: https://www.facebook.com/Crepe-Boheme-333246536829777
